@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <default-config>
+
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql:///study</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+
+        <!--连接池初始连接数-->
+        <property name="initialPoolSize">10</property>
+        <!--最大空闲时间 ，单位为分钟-->
+        <property name="maxIdleTime">30</property>
+        <!--最大连接数-->
+        <property name="maxPoolSize">300</property>
+        <!--最小连接数-->
+        <property name="minPoolSize">10</property>
+        <!--扩展连接数-->
+        <property name="acquireIncrement">10</property>
+
+    </default-config>
+
+</c3p0-config>
